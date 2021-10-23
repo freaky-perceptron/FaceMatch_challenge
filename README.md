@@ -23,7 +23,7 @@ We use a unique **[ArcFace](https://arxiv.org/pdf/1801.07698.pdf)** [1] ****base
 
 The distance between faces is calculated using *cosine distance*, which is a method used by search engines and can be calculated by the inner product of two normalized vectors. If the two vectors are the same, θ will be 0 and cosθ=1. If they are orthogonal, θ will be π/2 and cosθ=0. Therefore, it can be used as a similarity measure. 
 
-![Untitled](README%20b1797f43f66348c8b07cfeaa7e85332f/Untitled.png)
+![Untitled](images/Untitled.png)
 
 We use **[insightface](https://github.com/deepinsight/insightface)** [2] open source implementation for arcface which calculates the face embeddings(size: vector of 512 direction) for the faces. We used no particular accelerator but CPU for this approach. We used google colab and mounted google drive to fetch the data from the shared drive.
 
@@ -31,11 +31,11 @@ We took first 5000 datapoints into consideration to take inferences. We calculat
 
 **Histogram for matching face embeddings**
 
-![Untitled](README%20b1797f43f66348c8b07cfeaa7e85332f/Untitled%201.png)
+![Untitled](images/Untitled%201.png)
 
 **Histogram for non-matching face embeddings**
 
-![Untitled](README%20b1797f43f66348c8b07cfeaa7e85332f/Untitled%202.png)
+![Untitled](images/Untitled%202.png)
 
 **Note:** X-axis: cosine score; Y-axis: Number of datapoints
 
